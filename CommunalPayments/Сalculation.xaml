@@ -1,0 +1,22 @@
+﻿<Window x:Class="CommunalPayments.Сalculation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommunalPayments"
+        mc:Ignorable="d"
+        Title="Сalculation" Height="327.631" Width="856.759" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Выберите месяц и тарифный план, по которому расчитать. Двойной щелчок по квартире даёт право выбрать тариф." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="DataGrigNoRes" HorizontalAlignment="Left" Height="246" Margin="10,41,0,0" VerticalAlignment="Top" Width="658">
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+        </DataGrid>
+        <ComboBox x:Name="ComboDate" HorizontalAlignment="Left" Margin="686,41,0,0" VerticalAlignment="Top" Width="153" ItemsSource="{Binding data_start}" SelectedIndex="{Binding data_start}" SelectionChanged="ComboDate_SelectionChanged">
+        </ComboBox>
+
+    </Grid>
+</Window>

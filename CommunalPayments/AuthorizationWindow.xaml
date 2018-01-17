@@ -1,0 +1,18 @@
+﻿<Window x:Class="CommunalPayments.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommunalPayments"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="216" Width="307">
+    <Grid x:Name="grid1">
+
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Height="23" Margin="100,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="admin"/>
+        <Button x:Name="ConnectButton" Content="Войти" HorizontalAlignment="Left" Margin="214,155,0,0" VerticalAlignment="Top" Width="75" Click="Connect_Button_Click"/>
+        <Label x:Name="labelLogin" Content="Логин:" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelPassword" Content="Пароль:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="100,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="admin123"/>
+
+    </Grid>
+</Window>
